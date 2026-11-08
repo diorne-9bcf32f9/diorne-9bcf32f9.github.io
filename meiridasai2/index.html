@@ -1,0 +1,588 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>每日大赛主题大赛-每日大赛主题大赛参赛攻略_赛程规则与获奖作品合集</title>
+<meta name="description" content="每日大赛主题大赛专题页，汇总每日大赛主题大赛最新赛程、参赛规则、主题命题解析、获奖作品与创作灵感。想知道每日大赛主题大赛怎么参加、怎么选题、评审看重什么，这里都有可参考的实操经验和往期作品复盘。">
+<meta name="keywords" content="每日大赛主题大赛,每日大赛主题大赛规则,每日大赛主题大赛获奖作品,每日大赛主题大赛参赛攻略">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231c2b4a'/%3E%3Cpath d='M18 42l10-20 6 12 4-7 8 15z' fill='%23f5b940'/%3E%3Ccircle cx='46' cy='20' r='5' fill='%23ffffff'/%3E%3C/svg%3E">
+<style>
+:root{
+  --ink:#1c2b4a;
+  --ink-2:#2f4270;
+  --gold:#f5b940;
+  --gold-soft:#fdf3dc;
+  --paper:#f7f8fb;
+  --card:#ffffff;
+  --line:#e4e8f0;
+  --muted:#6b7691;
+  --radius:14px;
+  --shadow:0 6px 20px rgba(28,43,74,.08);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  background:var(--paper);
+  color:var(--ink);
+  line-height:1.75;
+  font-size:16px;
+}
+a{color:inherit;text-decoration:none}
+img{max-width:100%}
+.wrap{max-width:1200px;margin:0 auto;padding:0 18px}
+h1,h2,h3,h4{line-height:1.35;font-weight:700}
+section{scroll-margin-top:78px}
+
+/* 导航 */
+.nav-outer{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav-bar{display:flex;align-items:center;gap:22px;height:62px}
+.brand{display:flex;align-items:center;gap:9px;font-weight:800;font-size:17px;letter-spacing:.4px;white-space:nowrap}
+.brand-mark{width:32px;height:32px;border-radius:9px;background:linear-gradient(135deg,var(--ink),var(--ink-2));display:flex;align-items:center;justify-content:center;color:var(--gold);font-size:15px;font-weight:900}
+.nav-links{display:flex;gap:4px;flex:1;overflow-x:auto;scrollbar-width:none}
+.nav-links::-webkit-scrollbar{display:none}
+.nav-links a{padding:7px 11px;border-radius:8px;font-size:14.5px;color:var(--muted);white-space:nowrap;transition:.2s}
+.nav-links a:hover{background:var(--gold-soft);color:var(--ink)}
+.nav-cta{background:var(--ink);color:#fff;padding:8px 16px;border-radius:9px;font-size:14px;font-weight:600;white-space:nowrap;transition:.2s}
+.nav-cta:hover{background:var(--ink-2)}
+
+/* Banner */
+.hero{background:linear-gradient(160deg,#1c2b4a 0%,#27395f 55%,#1a2540 100%);color:#fff;padding:52px 0 46px;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;right:-90px;top:-70px;width:360px;height:360px;border-radius:50%;background:radial-gradient(circle,rgba(245,185,64,.22),transparent 68%)}
+.hero-inner{display:grid;grid-template-columns:1.25fr .75fr;gap:34px;position:relative;z-index:2}
+.hero h1{font-size:34px;line-height:1.3;margin-bottom:14px}
+.hero h1 em{font-style:normal;color:var(--gold)}
+.hero-sub{color:#c9d3e8;font-size:15.5px;margin-bottom:20px}
+.hero-sub span{display:block}
+.hero-tags{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px}
+.hero-tags a{font-size:13px;padding:5px 12px;border-radius:20px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.16);color:#e5ebf7;transition:.2s}
+.hero-tags a:hover{background:var(--gold);color:#1c2b4a;border-color:var(--gold)}
+.searchbox{display:flex;background:#fff;border-radius:11px;padding:5px;max-width:470px;box-shadow:0 10px 26px rgba(0,0,0,.22)}
+.searchbox input{flex:1;border:0;outline:0;padding:9px 12px;font-size:15px;color:var(--ink);background:transparent}
+.searchbox button{border:0;background:var(--gold);color:#1c2b4a;font-weight:700;padding:9px 20px;border-radius:8px;cursor:pointer;font-size:14.5px}
+.hero-side{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:var(--radius);padding:20px}
+.hero-side h3{font-size:15px;color:var(--gold);margin-bottom:12px}
+.hero-side ul{list-style:none;display:flex;flex-direction:column;gap:10px}
+.hero-side li{font-size:13.5px;color:#cfd8ea;display:flex;gap:8px;align-items:baseline}
+.hero-side li b{color:#fff;font-weight:600}
+.dot{width:6px;height:6px;border-radius:50%;background:var(--gold);flex:0 0 auto;transform:translateY(-2px)}
+
+/* 通用区块 */
+.sec{padding:44px 0 6px}
+.sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:22px;border-bottom:2px solid var(--line);padding-bottom:12px}
+.sec-head h2{font-size:23px;position:relative;padding-left:14px}
+.sec-head h2::before{content:"";position:absolute;left:0;top:6px;bottom:4px;width:5px;border-radius:3px;background:var(--gold)}
+.sec-head .more{font-size:13.5px;color:var(--muted);border:1px solid var(--line);padding:5px 13px;border-radius:20px;transition:.2s;white-space:nowrap}
+.sec-head .more:hover{border-color:var(--gold);color:var(--ink);background:var(--gold-soft)}
+.lead-text{font-size:15.5px;color:#3b4a6b;margin-bottom:18px}
+
+/* 分类入口 */
+.cat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.cat-item{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px 16px;transition:.22s;box-shadow:var(--shadow)}
+.cat-item:hover{transform:translateY(-3px);border-color:var(--gold)}
+.cat-item b{display:block;font-size:15px;margin-bottom:4px}
+.cat-item span{font-size:12.5px;color:var(--muted)}
+
+/* 卡片网格 */
+.card-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);transition:.22s;display:flex;flex-direction:column}
+.card:hover{transform:translateY(-4px);box-shadow:0 12px 26px rgba(28,43,74,.13)}
+.card-cover{height:104px;position:relative;display:flex;align-items:flex-end;padding:10px 14px;color:#fff;font-weight:800;font-size:15px;letter-spacing:.5px}
+.card-cover::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent,rgba(0,0,0,.45))}
+.card-cover i{position:relative;z-index:2;font-style:normal;text-shadow:0 1px 6px rgba(0,0,0,.4)}
+.g1{background:linear-gradient(120deg,#2b4a86,#4f7ad1)}
+.g2{background:linear-gradient(120deg,#8a4d1f,#d99a3d)}
+.g3{background:linear-gradient(120deg,#1f6b62,#3fb39f)}
+.g4{background:linear-gradient(120deg,#5c2f6e,#a863bd)}
+.g5{background:linear-gradient(120deg,#82333a,#cf6a63)}
+.g6{background:linear-gradient(120deg,#2c3e50,#5d7b9c)}
+.g7{background:linear-gradient(120deg,#3d5a1f,#84b04a)}
+.g8{background:linear-gradient(120deg,#1f4a6b,#4797c4)}
+.g9{background:linear-gradient(120deg,#6b3a1f,#c27a3f)}
+.card-body{padding:14px;display:flex;flex-direction:column;gap:8px;flex:1}
+.card-type{display:flex;flex-wrap:wrap;gap:6px}
+.tag{font-size:11.5px;padding:2px 9px;border-radius:20px;background:var(--gold-soft);color:#8a6412;border:1px solid #f2e2bd}
+.tag.blue{background:#eaf1fb;color:#2b5488;border-color:#d6e4f7}
+.card-body h3{font-size:16px}
+.card-body p{font-size:13.5px;color:var(--muted);flex:1}
+.card-meta{display:flex;gap:12px;font-size:12px;color:#8a93a8;border-top:1px dashed var(--line);padding-top:9px}
+.card-meta b{color:var(--ink-2);font-weight:700}
+
+/* 更新列表 */
+.update-list{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.upd{background:var(--card);border:1px solid var(--line);border-radius:11px;padding:12px 15px;display:flex;gap:12px;align-items:flex-start;transition:.2s}
+.upd:hover{border-color:var(--gold);background:#fffdf7}
+.upd-time{font-size:12px;color:#9aa3b7;white-space:nowrap;letter-spacing:.5px;padding-top:2px;min-width:74px}
+.upd b{font-size:14.5px;display:block;margin-bottom:2px}
+.upd span{font-size:13px;color:var(--muted)}
+
+/* 深度正文 */
+.article-box{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:28px 30px;box-shadow:var(--shadow)}
+.article-box h3{font-size:18px;margin:22px 0 10px;color:var(--ink-2)}
+.article-box h3:first-child{margin-top:0}
+.article-box p{font-size:15.3px;color:#3a4763;margin-bottom:13px}
+.article-box p b{color:var(--ink);font-weight:700}
+.note{background:var(--gold-soft);border-left:4px solid var(--gold);border-radius:0 10px 10px 0;padding:13px 16px;font-size:14.3px;color:#5a4a1d;margin:16px 0}
+
+/* 体验指南 */
+.guide-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.guide{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:18px;box-shadow:var(--shadow)}
+.guide em{font-style:normal;display:inline-flex;width:30px;height:30px;border-radius:9px;background:var(--ink);color:var(--gold);align-items:center;justify-content:center;font-weight:800;font-size:14px;margin-bottom:9px}
+.guide b{display:block;font-size:15px;margin-bottom:5px}
+.guide p{font-size:13.5px;color:var(--muted)}
+
+/* FAQ */
+.faq-box{display:flex;flex-direction:column;gap:10px}
+.faq-item{background:var(--card);border:1px solid var(--line);border-radius:11px;overflow:hidden}
+.faq-q{width:100%;text-align:left;background:none;border:0;padding:15px 18px;font-size:15.3px;font-weight:600;color:var(--ink);cursor:pointer;display:flex;justify-content:space-between;gap:14px;align-items:center;font-family:inherit}
+.faq-q::after{content:"+";font-size:19px;color:var(--gold);font-weight:400;line-height:1}
+.faq-item.open .faq-q::after{content:"−"}
+.faq-a{display:none;padding:0 18px 16px;font-size:14.4px;color:#48557a;border-top:1px dashed var(--line);padding-top:13px}
+.faq-item.open .faq-a{display:block}
+
+/* 评论 */
+.cmt-grid{display:grid;grid-template-columns:1fr 1fr;gap:13px}
+.cmt{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;box-shadow:var(--shadow)}
+.cmt-head{display:flex;align-items:center;gap:9px;margin-bottom:7px}
+.avatar{width:30px;height:30px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:800;color:#fff;flex:0 0 auto}
+.cmt-head b{font-size:13.6px}
+.cmt-head time{font-size:11.5px;color:#a2aabc;margin-left:auto}
+.cmt p{font-size:13.8px;color:#44506e}
+.cmt-reply{margin-top:8px;font-size:12.8px;color:#7b8499;background:#f6f8fc;border-radius:8px;padding:7px 10px}
+
+/* 资讯 */
+.news-list{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.news{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px;transition:.2s;box-shadow:var(--shadow)}
+.news:hover{border-color:var(--gold);transform:translateY(-2px)}
+.news time{font-size:12px;color:#96a0b5;letter-spacing:.4px}
+.news h3{font-size:15.6px;margin:5px 0 6px}
+.news p{font-size:13.5px;color:var(--muted)}
+
+/* 订阅 */
+.subscribe{background:linear-gradient(135deg,#1c2b4a,#2b4068);border-radius:18px;padding:34px 30px;color:#fff;display:flex;gap:24px;align-items:center;justify-content:space-between;flex-wrap:wrap;margin:44px 0 0}
+.subscribe h2{font-size:21px;margin-bottom:6px}
+.subscribe p{font-size:14px;color:#c3cde4}
+.sub-form{display:flex;gap:9px;flex-wrap:wrap}
+.sub-form input{border:0;outline:0;border-radius:9px;padding:11px 15px;font-size:14.5px;min-width:230px;background:#fff;color:var(--ink)}
+.sub-form button{border:0;background:var(--gold);color:#1c2b4a;padding:11px 24px;border-radius:9px;font-weight:700;cursor:pointer;font-size:14.5px}
+
+/* 页脚 */
+footer{background:#151f36;color:#93a0bb;margin-top:50px;padding:40px 0 22px;font-size:13.6px}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:26px;margin-bottom:26px}
+footer h4{color:#fff;font-size:14.5px;margin-bottom:11px}
+footer ul{list-style:none;display:flex;flex-direction:column;gap:7px}
+footer a:hover{color:var(--gold)}
+.foot-bottom{border-top:1px solid #26334f;padding-top:16px;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:12.6px;color:#6d7b98}
+.disclaimer{font-size:12.4px;color:#6d7b98;margin-top:10px;line-height:1.9}
+
+@media(max-width:960px){
+  .hero-inner{grid-template-columns:1fr}
+  .card-grid,.cat-grid,.guide-grid{grid-template-columns:repeat(2,1fr)}
+  .update-list,.cmt-grid,.news-list{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr 1fr}
+  .hero h1{font-size:27px}
+}
+@media(max-width:600px){
+  .card-grid,.cat-grid,.guide-grid{grid-template-columns:1fr}
+  .nav-links{display:none}
+  .sec{padding:32px 0 4px}
+  .article-box{padding:20px 17px}
+  .hero{padding:36px 0 30px}
+  .hero h1{font-size:23px}
+  .subscribe{padding:24px 18px}
+  .foot-grid{grid-template-columns:1fr}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- 导航 -->
+<div class="nav-outer">
+  <div class="wrap nav-bar">
+    <a href="/#top" class="brand"><span class="brand-mark">赛</span>每日大赛主题大赛</a>
+    <nav class="nav-links">
+      <a href="/#hero">首页</a>
+      <a href="/#category">主题分类</a>
+      <a href="/#hot">热门命题</a>
+      <a href="/#update">赛程更新</a>
+      <a href="/#analysis">规则解析</a>
+      <a href="/#guide">参赛指南</a>
+      <a href="/#faq">常见问答</a>
+      <a href="/#comments">选手讨论</a>
+      <a href="/#news">赛事资讯</a>
+    </nav>
+    <a href="/#subscribe" class="nav-cta">订阅赛程</a>
+  </div>
+</div>
+
+<!-- 首屏 -->
+<header class="hero" id="hero">
+  <div class="wrap hero-inner">
+    <div>
+      <h1>每日大赛主题大赛 <em>命题、规则与获奖作品</em> 一站式查阅</h1>
+      <div class="hero-sub">
+        <span>围绕每日大赛主题大赛的命题方向、评审口径与参赛流程做系统梳理，帮你在最短时间内看懂一场主题赛怎么打。</span>
+        <span>涵盖往期获奖作品复盘、选题灵感、提交规范与常见扣分点，适合新选手入门，也适合老选手查漏补缺。</span>
+      </div>
+      <div class="hero-tags">
+        <a href="/#category">命题分类</a>
+        <a href="/#hot">获奖作品</a>
+        <a href="/#analysis">评审标准</a>
+        <a href="/#update">赛程日历</a>
+        <a href="/#guide">提交规范</a>
+        <a href="/#faq">新手问答</a>
+        <a href="/#comments">选手讨论</a>
+      </div>
+      <form class="searchbox" onsubmit="return false">
+        <input type="text" placeholder="搜索主题命题、获奖作品、规则细节…">
+        <button type="button">搜索</button>
+      </form>
+    </div>
+    <aside class="hero-side">
+      <h3>本期主题赛速览</h3>
+      <ul>
+        <li><i class="dot"></i><span><b>本期命题</b>：光影与日常的再发现</span></li>
+        <li><i class="dot"></i><span><b>提交截止</b>：2026年11月18日 24:00</span></li>
+        <li><i class="dot"></i><span><b>评审维度</b>：切题度 / 完成度 / 表达力</span></li>
+        <li><i class="dot"></i><span><b>获奖公示</b>：2026年11月25日</span></li>
+        <li><i class="dot"></i><span><b>已收稿件</b>：约 3,200 份</span></li>
+      </ul>
+    </aside>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- 内容简介 -->
+  <section class="sec" id="intro">
+    <div class="sec-head">
+      <h2>每日大赛主题大赛是什么：一场命题制创作的周期赛</h2>
+      <a class="more" href="/#analysis">看规则解析</a>
+    </div>
+    <p class="lead-text">很多人第一次听到每日大赛主题大赛，会误以为它只是一次性的线上投稿活动。实际上它更接近一个按周期滚动更新的命题创作联赛：每一期给出统一主题，参赛者在规定窗口内完成作品并提交，随后由评审团按公开维度打分，最终公示名次与获奖作品。</p>
+    <p class="lead-text">这个页面存在的意义，是把分散在公告、群聊截图、往期榜单里的信息重新组织起来。你在这里能看到每日大赛主题大赛的命题演变规律、不同类型主题的创作侧重、往期获奖作品的共性特征，以及新手最容易踩的坑。适合刚接触主题赛、想系统了解参赛流程的人；也适合已经投过几次稿、但成绩一直卡在中游、想弄清评审到底看重什么的选手。</p>
+    <p class="lead-text">页面内容按“先看懂—再选题—后提交”的顺序排列。如果你时间有限，建议先看规则解析和参赛指南两栏；如果你想找灵感，直接跳到热门命题与获奖作品复盘。收藏本页后，每期命题更新时回来看一眼，基本能跟上整个赛程节奏。</p>
+  </section>
+
+  <!-- 分类入口 -->
+  <section class="sec" id="category">
+    <div class="sec-head">
+      <h2>主题分类入口：按命题方向找灵感</h2>
+      <a class="more" href="/#hot">进入热门命题</a>
+    </div>
+    <div class="cat-grid">
+      <a class="cat-item" href="/#hot"><b>光影与日常</b><span>生活切片类命题，重细节观察</span></a>
+      <a class="cat-item" href="/#hot"><b>城市与空间</b><span>街景、建筑、公共空间叙事</span></a>
+      <a class="cat-item" href="/#hot"><b>人物与情绪</b><span>肖像、状态、关系表达</span></a>
+      <a class="cat-item" href="/#hot"><b>色彩与构成</b><span>强形式感命题，考画面控制</span></a>
+      <a class="cat-item" href="/#hot"><b>叙事与序列</b><span>组图、连续表达、节奏安排</span></a>
+      <a class="cat-item" href="/#hot"><b>概念与观念</b><span>抽象命题，重立意与转化</span></a>
+      <a class="cat-item" href="/#hot"><b>自然与季节</b><span>时令主题，重氛围与质感</span></a>
+      <a class="cat-item" href="/#hot"><b>实验与混合媒介</b><span>跨界表达，重完成度</span></a>
+    </div>
+  </section>
+
+  <!-- 热门命题 -->
+  <section class="sec" id="hot">
+    <div class="sec-head">
+      <h2>热门命题与获奖作品复盘</h2>
+      <a class="more" href="/#update">查看赛程更新</a>
+    </div>
+    <div class="card-grid">
+      <article class="card">
+        <div class="card-cover g1"><i>《窗外的十分钟》</i></div>
+        <div class="card-body">
+          <div class="card-type"><span class="tag">光影与日常</span><span class="tag blue">一等奖</span></div>
+          <h3>窗外的十分钟</h3>
+          <p>作者把镜头固定在自家窗台，用一天中光线变化讲完一个关于等待的短故事，切题度极高。</p>
+          <div class="card-meta"><span>评审分 <b>92.4</b></span><span>组图 8 张</span></div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-cover g2"><i>《早市第七排》</i></div>
+        <div class="card-body">
+          <div class="card-type"><span class="tag">城市与空间</span><span class="tag blue">二等奖</span></div>
+          <h3>早市第七排</h3>
+          <p>以固定机位记录早市一个摊位的七天变化，人物关系在重复构图里自然浮现，节奏克制。</p>
+          <div class="card-meta"><span>评审分 <b>89.7</b></span><span>组图 7 张</span></div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-cover g3"><i>《她低头的时候》</i></div>
+        <div class="card-body">
+          <div class="card-type"><span class="tag">人物与情绪</span><span class="tag blue">评审推荐</span></div>
+          <h3>她低头的时候</h3>
+          <p>单张作品，靠一个极小的动作和侧逆光完成情绪表达，是当期讨论度最高的照片之一。</p>
+          <div class="card-meta"><span>评审分 <b>88.1</b></span><span>单张</span></div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-cover g4"><i>《红与灰的九宫格》</i></div>
+        <div class="card-body">
+          <div class="card-type"><span class="tag">色彩与构成</span><span class="tag blue">创意奖</span></div>
+          <h3>红与灰的九宫格</h3>
+          <p>严格按九宫格排列，用色块对比制造视觉张力，形式感强，评语称其“把命题做成了练习曲”。</p>
+          <div class="card-meta"><span>评审分 <b>86.5</b></span><span>组图 9 张</span></div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-cover g5"><i>《三万步以后》</i></div>
+        <div class="card-body">
+          <div class="card-type"><span class="tag">叙事与序列</span><span class="tag blue">二等奖</span></div>
+          <h3>三万步以后</h3>
+          <p>用步数作为叙事线索串起一天的行走轨迹，图片顺序即时间顺序，读起来像一篇视觉日记。</p>
+          <div class="card-meta"><span>评审分 <b>88.9</b></span><span>组图 12 张</span></div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-cover g6"><i>《不存在的房间》</i></div>
+        <div class="card-body">
+          <div class="card-type"><span class="tag">概念与观念</span><span class="tag blue">入围</span></div>
+          <h3>不存在的房间</h3>
+          <p>通过遮挡与反射构造出不存在的空间，立意不错，但完成度略逊，评语提到“收尾偏仓促”。</p>
+          <div class="card-meta"><span>评审分 <b>82.3</b></span><span>组图 6 张</span></div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-cover g7"><i>《立秋那天的风》</i></div>
+        <div class="card-body">
+          <div class="card-type"><span class="tag">自然与季节</span><span class="tag blue">人气奖</span></div>
+          <h3>立秋那天的风</h3>
+          <p>时令命题下的稳定发挥，长焦压缩画面，把风拍出了可感的形状，评论区讨论很热闹。</p>
+          <div class="card-meta"><span>评审分 <b>85.0</b></span><span>单张</span></div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-cover g8"><i>《一张纸的三种可能》</i></div>
+        <div class="card-body">
+          <div class="card-type"><span class="tag">实验与混合媒介</span><span class="tag blue">特别奖</span></div>
+          <h3>一张纸的三种可能</h3>
+          <p>混合了拍摄与手工拼贴，媒介边界处理得干净，是把概念命题落地的一个不错示范。</p>
+          <div class="card-meta"><span>评审分 <b>84.6</b></span><span>组图 3 张</span></div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-cover g9"><i>《凌晨四点的便利店》</i></div>
+        <div class="card-body">
+          <div class="card-type"><span class="tag">光影与日常</span><span class="tag blue">入围</span></div>
+          <h3>凌晨四点的便利店</h3>
+          <p>选题亲民，光比控制不错，争议点在于“过于常见”，评审建议在视角上再往前走一步。</p>
+          <div class="card-meta"><span>评审分 <b>81.8</b></span><span>组图 5 张</span></div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- 赛程更新 -->
+  <section class="sec" id="update">
+    <div class="sec-head">
+      <h2>赛程更新与最新动态</h2>
+      <a class="more" href="/#news">赛事资讯</a>
+    </div>
+    <div class="update-list">
+      <div class="upd"><span class="upd-time">11-07 09:20</span><div><b>第十一期命题正式公布</b><span>本期主题“光影与日常的再发现”，提交窗口开放至11月18日。</span></div></div>
+      <div class="upd"><span class="upd-time">11-06 18:45</span><div><b>第十期获奖名单公示</b><span>共评出一等奖1名、二等奖2名、评审推荐4名，附完整评语。</span></div></div>
+      <div class="upd"><span class="upd-time">11-05 14:10</span><div><b>评审团新增两位评委</b><span>分别来自纪实与观念摄影方向，后续命题的评审视角会更均衡。</span></div></div>
+      <div class="upd"><span class="upd-time">11-04 21:30</span><div><b>提交规范更新说明</b><span>组图数量上限由12张调整为10张，文件命名规则同步微调。</span></div></div>
+      <div class="upd"><span class="upd-time">11-03 11:05</span><div><b>第九期作品精选上线</b><span>整理出20组值得回看的作品，含作者自述与评审短评。</span></div></div>
+      <div class="upd"><span class="upd-time">11-02 16:40</span><div><b>新增“命题拆解”栏目</b><span>每期命题发布后48小时内更新选题思路，帮助选手快速切入。</span></div></div>
+      <div class="upd"><span class="upd-time">11-01 10:00</span><div><b>第十期收稿数据公布</b><span>共收到有效投稿2987份，组图占比约六成，单张作品数量回升。</span></div></div>
+      <div class="upd"><span class="upd-time">10-30 19:15</span><div><b>关于重复投稿的说明</b><span>同一作者可提交多组作品，但同一组作品不得跨期重复投递。</span></div></div>
+      <div class="upd"><span class="upd-time">10-28 13:25</span><div><b>第十期命题答疑汇总</b><span>集中回应了“是否允许后期处理”“组图是否需要统一色调”等问题。</span></div></div>
+      <div class="upd"><span class="upd-time">10-26 08:50</span><div><b>赛程日历功能上线</b><span>可在本页订阅区登记邮箱，命题发布与截止前会收到提醒。</span></div></div>
+    </div>
+  </section>
+
+  <!-- 深度解析 -->
+  <section class="sec" id="analysis">
+    <div class="sec-head">
+      <h2>每日大赛主题大赛深度解析：命题、评审与创作方法</h2>
+      <a class="more" href="/#guide">参赛指南</a>
+    </div>
+    <div class="article-box">
+      <h3>一、命题制赛事的特点：限制反而是优势</h3>
+      <p>每日大赛主题大赛最核心的机制是“统一命题”。所有人拿到同一个题目，评审在同一把尺子下比较，这既是压力也是机会。压力在于你没法靠题材的稀缺性取巧；机会在于，当所有人面对同一个主题时，<b>差异只能来自观察角度和完成度</b>，而这恰恰是可以训练的部分。</p>
+      <p>从往期数据看，获奖作品很少是“最华丽的”，更多是“最贴题的”。评审在切题度上的权重通常占到三成以上，这意味着一个中等完成度但精准命中命题的作品，成绩往往优于一个技术漂亮但跑题的作品。很多新选手把精力全放在后期和器材上，忽略了审题，这是最常见的失分原因。</p>
+
+      <h3>二、评审到底看什么：三个维度的拆解</h3>
+      <p>综合多期评语，每日大赛主题大赛的评审维度大致可以归为三类。第一是<b>切题度</b>，即作品是否回应了命题的核心，而不是只蹭了字面意思。第二是<b>完成度</b>，包括构图、曝光、色彩、序列逻辑，以及组图之间的内在联系是否成立。第三是<b>表达力</b>，也就是作品有没有让人多看一眼的理由，这个维度最主观，但也最能拉开差距。</p>
+      <p>值得注意的是，评审对“表达力”的偏好并不统一。纪实方向的评委更看重真实感和现场感，观念方向的评委更看重转化的巧思。因此同一组作品在不同期次成绩波动是正常的，不必因为一次落选就否定自己的方向。更有效的做法是：连续投三期，观察评语里重复出现的关键词，那往往就是你真正需要改的地方。</p>
+
+      <div class="note">经验提示：把每期评语抄下来，按“切题 / 完成 / 表达”三类归档。三个月后回看，你会发现自己反复被指出的问题通常只有一个，解决它比换器材有用得多。</div>
+
+      <h3>三、选题方法：从命题词到画面</h3>
+      <p>拿到一个主题，先别急着拍。把命题拆成两到三个关键词，比如“光影与日常的再发现”，可以拆成“光影”“日常”“再发现”。前两个是素材范围，第三个才是真正的动作要求——它要求你呈现别人没注意到的角度。很多人只做到“光影+日常”，拍了一张好看的生活照就提交了，缺的正是“再发现”这一层。</p>
+      <p>一个实用的做法是列出十种“最普通的拍法”，然后全部排除，从第十一种开始想。这个过程很笨，但能有效避开同质化。往期数据显示，同一命题下出现频率最高的三类画面，几乎从不进获奖名单，因为评审一天要看几百份稿子，重复的视觉经验很难留下印象。</p>
+
+      <h3>四、组图与单张：两种提交策略</h3>
+      <p>单张作品的优势是冲击力集中，弱点是一旦画面不够强就没有回旋余地。组图的优势是可以用序列讲故事，弱点是任何一张拉胯都会拖累整体。每日大赛主题大赛对两者都接受，但从获奖分布看，组图在叙事类命题中占优，单张在情绪类命题中更有机会。</p>
+      <p>如果选择组图，建议控制在六到八张，宁少勿多。评审看一组作品的平均时间有限，超过十张很容易出现注意力衰减，后面的片子反而被草草带过。组图内部要有明确的起承转合：第一张建立场景，中间推进，最后一张收束。不要把所有好片子堆在开头，也不要把最弱的一张放在结尾。</p>
+
+      <h3>五、适合什么人参加，以及如何判断自己该不该投</h3>
+      <p>每日大赛主题大赛的门槛并不高，手机拍摄同样可以获奖，往期就有多组手机作品进入推荐名单。它更适合三类人：一是需要外部命题逼迫自己持续产出的人；二是想通过横向比较了解自己水平位置的人；三是希望积累完整作品集的人。如果你只是想随手发发图、不在意反馈，那参加与否意义不大；但如果你希望有人认真看你的作品并给出理由，这个赛制的反馈密度是值得的。</p>
+      <p>最后提醒一点：不要为了迎合评审而彻底改变自己的方向。赛事是参照系，不是标准答案。真正有价值的，是在一次次命题中把属于自己的那套语言磨得更清楚。</p>
+    </div>
+  </section>
+
+  <!-- 参赛指南 -->
+  <section class="sec" id="guide">
+    <div class="sec-head">
+      <h2>参赛与浏览体验指南</h2>
+      <a class="more" href="/#faq">常见问答</a>
+    </div>
+    <div class="guide-grid">
+      <div class="guide"><em>1</em><b>先读命题再动手</b><p>命题发布后先看官方拆解，确认核心动词，再决定拍摄方向，能省下大量返工时间。</p></div>
+      <div class="guide"><em>2</em><b>按分类筛作品</b><p>本页分类入口按命题方向划分，想找同类参考时直接点对应分类，比逐条翻更高效。</p></div>
+      <div class="guide"><em>3</em><b>关注截止时间</b><p>赛程更新栏会标注提交窗口，建议提前一天完成上传，避免最后时刻网络拥堵。</p></div>
+      <div class="guide"><em>4</em><b>移动端阅读友好</b><p>页面在手机上自动切换单列布局，卡片信息完整保留，通勤路上也能看获奖复盘。</p></div>
+      <div class="guide"><em>5</em><b>收藏与追更</b><p>把本页加入书签，每期命题更新时回来对照，能形成稳定的参赛节奏。</p></div>
+      <div class="guide"><em>6</em><b>顺着推荐扩展</b><p>每张作品卡片都可继续延伸，从获奖作品看到评语，再看到同类命题，路径是通的。</p></div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="sec" id="faq">
+    <div class="sec-head">
+      <h2>每日大赛主题大赛常见问题</h2>
+      <a class="more" href="/#comments">看选手讨论</a>
+    </div>
+    <div class="faq-box">
+      <div class="faq-item open">
+        <button class="faq-q" type="button">每日大赛主题大赛一般多久一期，错过一期还能补投吗？</button>
+        <div class="faq-a">通常按周或双周滚动更新，具体以当期公告为准。目前赛制不支持跨期补投，提交窗口关闭后系统不再接收稿件。如果你错过了某期，建议直接准备下一期命题，同时把上一期的获奖作品和评语看一遍，很多命题方向是延续的，提前准备不会浪费。订阅本页的赛程提醒可以减少错过概率。</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" type="button">用手机拍摄参加每日大赛主题大赛有竞争力吗？</button>
+        <div class="faq-a">有。往期获奖与推荐名单中都出现过手机作品，评审看的是切题度和表达力，不是器材参数。手机的优势是随身、反应快，适合抓日常类命题；劣势是弱光和大场景控制。建议在光线充足的条件下拍摄，避免过度数码变焦，把精力放在观察和构图上，这比升级设备更直接有效。</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" type="button">组图提交多少张比较合适？</button>
+        <div class="faq-a">综合多期评语，六到八张是比较稳妥的区间。低于四张很难形成序列感，超过十张则容易让评审注意力分散，且单张短板会被放大。组图要有明确的顺序逻辑，第一张负责建立情境，中间推进，最后一张收束。提交前建议自己隔一天再看一遍，如果某张删掉后整体更顺，那就删掉它。</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" type="button">后期处理会被扣分吗？</button>
+        <div class="faq-a">基础调整如曝光、对比、色彩校正通常没有问题，这也是正常创作流程的一部分。争议主要集中在合成、移除元素、大幅改变画面内容这类操作上。不同命题的宽松度不同，纪实倾向的命题要求更严格。稳妥的做法是保留原始文件，并在提交时如实说明处理范围，避免因规则理解偏差被判无效。</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" type="button">连续几期没进名单，是不是方向不对？</button>
+        <div class="faq-a">不一定。评审口味存在波动，同一组作品在不同期次成绩不同是常见现象。更有效的判断方法是看评语：如果多次被指出同一类问题，那才是需要调整的方向；如果评语是“完成度不错但记忆点不足”，说明技术已过关，缺的是选题角度。建议连续投三期后再做判断，单期结果参考价值有限。</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" type="button">想系统了解每日大赛主题大赛，应该按什么顺序看这个页面？</button>
+        <div class="faq-a">推荐顺序是：先看规则解析了解评审维度，再看热门命题与获奖作品建立直观标准，然后读参赛指南确认提交细节，最后翻常见问题和选手讨论补齐细节疑问。如果你只有十分钟，直接看深度解析里的“评审到底看什么”和FAQ前三条，基本能覆盖新手最需要的部分。</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 评论 -->
+  <section class="sec" id="comments">
+    <div class="sec-head">
+      <h2>选手讨论区</h2>
+      <a class="more" href="/#news">赛事资讯</a>
+    </div>
+    <div class="cmt-grid">
+      <div class="cmt"><div class="cmt-head"><span class="avatar" style="background:#2b4a86">林</span><b>林间有雾</b><time>11-06</time></div><p>这期命题看着简单，真拍起来才发现“再发现”三个字最难。我第一版拍完自己都觉得平淡，重来了两次。</p></div>
+      <div class="cmt"><div class="cmt-head"><span class="avatar" style="background:#8a4d1f">陈</span><b>陈拾光</b><time>11-06</time></div><p>往期复盘很有用，尤其是评语部分。之前一直以为自己是构图问题，看完发现其实是切题不够。</p></div>
+      <div class="cmt"><div class="cmt-head"><span class="avatar" style="background:#1f6b62">周</span><b>周小满</b><time>11-05</time></div><p>组图数量改成10张以内我觉得挺合理，之前有人投二十多张，看到后面真的会疲劳。</p></div>
+      <div class="cmt"><div class="cmt-head"><span class="avatar" style="background:#5c2f6e">阿</span><b>阿吉不熬夜</b><time>11-05</time></div><p>手机党报到，上一期进了推荐名单，证明器材真不是决定因素。光线好真的比什么都重要。</p></div>
+      <div class="cmt"><div class="cmt-head"><span class="avatar" style="background:#82333a">苏</span><b>苏打绿岛</b><time>11-04</time></div><p>不太认同“组图一定比单张好”的说法，情绪类命题单张反而更狠，堆多了会稀释。</p><div class="cmt-reply">回复 @陈拾光：同意，看命题类型选形式更稳。</div></div>
+      <div class="cmt"><div class="cmt-head"><span class="avatar" style="background:#2c3e50">何</span><b>何处是归途</b><time>11-04</time></div><p>连续三期没进名单了，看完评语发现都在说“安全”，确实是选得太保守。</p></div>
+      <div class="cmt"><div class="cmt-head"><span class="avatar" style="background:#3d5a1f">许</span><b>许一川</b><time>11-03</time></div><p>赛程提醒功能挺实用，之前错过一次截止，现在提前一天收到邮件就稳了。</p></div>
+      <div class="cmt"><div class="cmt-head"><span class="avatar" style="background:#1f4a6b">沈</span><b>沈默的镜头</b><time>11-03</time></div><p>《窗外的十分钟》那组确实服气，构图几乎没变，但每张都有新信息，这才是序列。</p></div>
+      <div class="cmt"><div class="cmt-head"><span class="avatar" style="background:#6b3a1f">郑</span><b>郑在拍</b><time>11-02</time></div><p>想问下后期合成到底算不算违规，规则写的是“不得改变画面主体”，这个边界有点模糊。</p><div class="cmt-reply">回复 @郑在拍：建议保留原片并如实说明，模糊地带别赌。</div></div>
+      <div class="cmt"><div class="cmt-head"><span class="avatar" style="background:#4a3b8a">吴</span><b>吴名之辈</b><time>11-02</time></div><p>这期收稿三千份，竞争是真的大，但看获奖作品又觉得差距没想象中远，主要是想法。</p></div>
+      <div class="cmt"><div class="cmt-head"><span class="avatar" style="background:#8a5a1f">白</span><b>白露为霜</b><time>11-01</time></div><p>《早市第七排》那种固定机位的拍法其实很考验耐心，七天同一个位置，我做不到。</p></div>
+      <div class="cmt"><div class="cmt-head"><span class="avatar" style="background:#1f6b4a">顾</span><b>顾南舟</b><time>11-01</time></div><p>希望官方多放一点落选作品的评语，获奖的看多了，反而想知道差一点的那些差在哪。</p></div>
+      <div class="cmt"><div class="cmt-head"><span class="avatar" style="background:#6b1f4a">唐</span><b>唐小糖</b><time>10-31</time></div><p>第一次参加，提交完才发现文件命名规则改了，还好赶在截止前重新传了一遍。</p></div>
+      <div class="cmt"><div class="cmt-head"><span class="avatar" style="background:#2b4a6b">李</span><b>李子树下</b><time>10-30</time></div><p>这页的分类入口做得挺细，按命题方向找参考比自己瞎翻效率高多了。</p></div>
+      <div class="cmt"><div class="cmt-head"><span class="avatar" style="background:#7a3b1f">韩</span><b>韩江雪</b><time>10-29</time></div><p>《不存在的房间》立意我是喜欢的，就是结尾那张太弱，评语说得挺准。</p></div>
+      <div class="cmt"><div class="cmt-head"><span class="avatar" style="background:#3b3b8a">秦</span><b>秦时明月</b><time>10-28</time></div><p>建议新手别一上来就投组图，先把单张练稳，序列逻辑真的需要经验。</p></div>
+    </div>
+  </section>
+
+  <!-- 资讯 -->
+  <section class="sec" id="news">
+    <div class="sec-head">
+      <h2>相关赛事资讯</h2>
+      <a class="more" href="/#update">赛程更新</a>
+    </div>
+    <div class="news-list">
+      <article class="news"><time>2026-11-07</time><h3>第十一期命题发布：光影与日常的再发现</h3><p>本期强调“再发现”，评审希望看到对熟悉场景的重新组织，而非简单的光影堆叠。</p></article>
+      <article class="news"><time>2026-11-06</time><h3>第十期获奖名单与完整评语公开</h3><p>一等奖作品以固定机位完成日常叙事，评审称其“在限制中找到了自由”。</p></article>
+      <article class="news"><time>2026-11-04</time><h3>提交规范微调：组图上限与命名规则</h3><p>组图数量上限下调至10张，文件命名需包含期次与序号，避免混淆。</p></article>
+      <article class="news"><time>2026-11-03</time><h3>第九期精选作品合集上线</h3><p>整理20组值得回看的作品，附作者自述，适合作为选题参考。</p></article>
+      <article class="news"><time>2026-11-01</time><h3>第十期收稿数据：组图占比约六成</h3><p>有效投稿2987份，单张作品数量较上期回升，情绪类命题更受单张作者青睐。</p></article>
+      <article class="news"><time>2026-10-30</time><h3>关于重复投稿与跨期投递的说明</h3><p>同一作者可提交多组作品，但同一组作品不得跨期重复投递，违者取消当期资格。</p></article>
+    </div>
+  </section>
+
+  <!-- 订阅 -->
+  <section class="subscribe" id="subscribe">
+    <div>
+      <h2>订阅每日大赛主题大赛赛程提醒</h2>
+      <p>命题发布、截止前48小时、获奖公示三个节点，各发一封提醒邮件。</p>
+    </div>
+    <form class="sub-form" onsubmit="return false">
+      <input type="email" placeholder="填写邮箱，仅用于赛程提醒">
+      <button type="button">立即订阅</button>
+    </form>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h4>每日大赛主题大赛</h4>
+        <p style="line-height:1.9">一个围绕命题制创作赛事整理的内容专题页，涵盖命题解析、评审维度、获奖作品复盘与参赛指引，帮助选手更高效地理解赛制。</p>
+      </div>
+      <div>
+        <h4>栏目导航</h4>
+        <ul>
+          <li><a href="/#category">主题分类</a></li>
+          <li><a href="/#hot">热门命题</a></li>
+          <li><a href="/#update">赛程更新</a></li>
+          <li><a href="/#analysis">规则解析</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>参赛相关</h4>
+        <ul>
+          <li><a href="/#guide">参赛指南</a></li>
+          <li><a href="/#faq">常见问答</a></li>
+          <li><a href="/#comments">选手讨论</a></li>
+          <li><a href="/#news">赛事资讯</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>友情链接</h4>
+        <ul>
+          <li><a href="/#top">创作社区入口</a></li>
+          <li><a href="/#top">作品展示页</a></li>
+          <li><a href="/#top">规则公告栏</a></li>
+          <li><a href="/#top">联系与反馈</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 每日大赛主题大赛专题页 · 内容整理与展示</span>
+      <span>本页信息以当期官方公告为准</span>
+    </div>
+    <p class="disclaimer">免责声明：本页面为第三方内容整理与信息聚合展示，所涉赛事名称、命题、时间与规则以主办方正式公告为最终依据。页面中出现的作品名称、评分为内容示例与讨论用途，不构成任何形式的官方排名或承诺。如相关权利方对内容有异议，可通过页面反馈渠道联系处理。</p>
+  </div>
+</footer>
+
+<script>
+document.querySelectorAll('.faq-q').forEach(function(btn){
+  btn.addEventListener('click',function(){
+    var item=btn.parentElement;
+    var open=item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(function(el){el.classList.remove('open')});
+    if(!open){item.classList.add('open')}
+  });
+});
+</script>
+</body>
+  </html>
